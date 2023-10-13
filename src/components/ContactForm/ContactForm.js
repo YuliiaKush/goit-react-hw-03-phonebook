@@ -14,12 +14,11 @@ export class ContactForm extends Component {
     number: '',
   };
 
-    handleNameChange = event => {
+    handleNumberChange = event => {
     const {name, value} = event.target
     this.setState({ [name]: value });
-  };
-
-
+    };
+    
   handleSubmit = event => {
     event.preventDefault();
 
@@ -57,7 +56,7 @@ export class ContactForm extends Component {
           title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
           required
           value={name}
-          onChange={this.handleNameChange}
+          onChange={this.handleNumberChange}
         />
         <FormLabel htmlFor="numberInput">Number</FormLabel>
         <FormInput
